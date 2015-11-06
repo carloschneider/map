@@ -1,0 +1,19 @@
+html,
+body {
+  height: 100%;
+}
+
+.map {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#loading-bar-spinner {
+  display: block;
+  position: fixed;
+  z-index: 10002;
+  top: 10px;
+  right: 10px;
+  left: auto !important;
+}

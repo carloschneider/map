@@ -1,0 +1,24 @@
+{
+  "globals": {
+    "__dirname": false,
+    "module": false,
+    "angular": false,
+    "google": false,
+    "next": false,
+    "_": false
+  },
+  "node": true,
+  "esnext": true,
+  "bitwise": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": "nofunc",
+  "newcap": true,
+  "noarg": true,
+  "regexp": true,
+  "undef": true,
+  "smarttabs": true,
+  "asi": true,
+  "debug": true,
+  "laxcomma": true
+}

@@ -1,0 +1,29 @@
+{
+  "name": "map",
+  "description": "A simple app to show locations using the MongoDB $geoWithin $box",
+  "main": "app.js",
+  "authors": [
+    "Carlo Schneider"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "map"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "normalize-css": "normalize.css#~3.0.3",
+    "angular-loading-bar": "~0.8.0",
+    "angular-animate": "~1.4.7",
+    "lodash": "~3.10.1"
+  }
+}
