@@ -2,7 +2,11 @@
   "name": "map",
   "version": "1.0.0",
   "description": "A simple app to show locations using the MongoDB $geoWithin $box",
-  "main": "app.js",
+  "main": "app/server/app.js",
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.14.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "npm install",
