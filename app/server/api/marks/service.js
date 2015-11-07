@@ -42,10 +42,6 @@
       }
     };
 
-    console.log(req.query.neLat, req.query.neLng, req.query.swLat, req.query.swLng);
-    console.log('###');
-    console.log(query.coordinates.$geoWithin.$box);
-
     Model.find(query, 'coordinates', function (err, data) {
       if (err) {
         console.log('Error: ', err);
