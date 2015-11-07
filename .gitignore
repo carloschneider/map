@@ -13,3 +13,4 @@ pids
 lib-cov
 coverage
 .lock-wscript
+.env
