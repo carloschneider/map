@@ -1,23 +1,20 @@
 'use strict';
 
-var mongoose = require('mongoose')
-  , debug = require('debug')('map');
+var mongoose = require('mongoose');
 
-// var configDatabase = {
-//   'host': 'host'
-//   , 'db': 'db'
-//   , 'user': 'user'
-//   , 'pass': 'pass'
-// };
+var configDatabase = {
+  'host': process.env.DATABASE_HOST
+  , 'db': process.env.DATABASE_DB
+  , 'user': process.env.DATABASE_USER
+  , 'pass': process.env.DATABASE_PASS
+  , 'port': process.env.DATABASE_PORT
+};
 
-mongoose.connect('mongodb://'+ configDatabase.host +'/'+ configDatabase.db);
-
+mongoose.connect('mongodb://'+ configDatabase.user +':'+ configDatabase.pass +'@'+ configDatabase.host +':'+ configDatabase.port +'/'+ configDatabase.db);
 var db = mongoose.connection;
 
-console.log(db);
-
 db.on('error', function (err) {
-  debug(err);
+  console.log(err);
 });
 
 db.on('connected', function() {
