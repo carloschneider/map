@@ -21,8 +21,6 @@
     return directive;
 
     function link ($scope, element) {
-      cfpLoadingBar.start();
-
       geoLocationService.getPosition().then(function (position) {
         google.maps.event.addDomListener(window, 'load', createMap(position));
       });
@@ -42,10 +40,6 @@
           icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
           position: latLng,
           map: gMap
-        });
-
-        google.maps.event.addListenerOnce(gMap, 'idle', function(){
-          cfpLoadingBar.start();
         });
 
         $scope.onCreate({
