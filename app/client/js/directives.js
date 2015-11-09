@@ -37,7 +37,7 @@
 
         var gMap = new google.maps.Map(element[0], mapOptions);
         new google.maps.Marker({
-          icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+          icon: '//maps.google.com/mapfiles/ms/icons/blue-dot.png',
           position: latLng,
           map: gMap
         });
